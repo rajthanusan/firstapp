@@ -16,7 +16,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('hi thanu'),
+        title: new Text('hi thanusan'),
       ),
       body: new Container(
         child: new Text('welcome to flutter'),
