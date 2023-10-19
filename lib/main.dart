@@ -16,12 +16,12 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: IconButton(
+        /* leading: IconButton(
           icon: Icon(Icons.menu),
           onPressed: () {
             print('Icon Button Click');
           },
-        ),
+        ),*/
         title: Text('Appbar Demo'),
         actions: <Widget>[
           IconButton(
@@ -57,6 +57,25 @@ class _MyAppState extends State<MyApp> {
         child: Text(
           'thanusan',
           style: TextStyle(fontSize: 28.0, color: Colors.red),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        elevation: 10.0,
+        onPressed: () {
+          print('thanusan click');
+        },
+        child: Icon(Icons.add),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+      drawer: Drawer(
+        elevation: 1.0,
+        child: Column(
+          children: <Widget>[
+            UserAccountsDrawerHeader(
+              accountName: Text('Thanusan'),
+              accountEmail: Text('thanusan@gmail.com'),
+            ),
+          ],
         ),
       ),
     );
