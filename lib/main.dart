@@ -74,6 +74,16 @@ class _MyAppState extends State<MyApp> {
             UserAccountsDrawerHeader(
               accountName: Text('Thanusan'),
               accountEmail: Text('thanusan@gmail.com'),
+              currentAccountPicture: CircleAvatar(
+                backgroundColor: Colors.white,
+                child: Text('xyz'),
+              ),
+              otherAccountsPictures: <Widget>[
+                CircleAvatar(
+                  backgroundColor: Colors.white,
+                  child: Text('xyz'),
+                )
+              ],
             ),
           ],
         ),
