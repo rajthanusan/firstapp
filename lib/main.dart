@@ -82,12 +82,41 @@ class _MyAppState extends State<MyApp> {
                 CircleAvatar(
                   backgroundColor: Colors.white,
                   child: Text('xyz'),
-                )
+                ),
               ],
             ),
+            ListTile(
+              title: Text('All Inbox'),
+              leading: Icon(Icons.mail),
+            ),
+            Divider(
+              height: 1,
+            ),
+            ListTile(
+              title: Text('All Primary'),
+              leading: Icon(Icons.inbox),
+            ),
+            Divider(
+              height: 1,
+            ),
+            ListTile(
+              title: Text('Social'),
+              leading: Icon(Icons.people),
+            ),
+            Divider(
+              height: 1,
+            ),
+            ListTile(
+              title: Text('Promotion'),
+              leading: Icon(Icons.local_offer),
+            ),
+            Divider(
+              height: 1,
+            )
           ],
         ),
       ),
+      persistentFooterButtons: <Widget>[],
     );
   }
 }
